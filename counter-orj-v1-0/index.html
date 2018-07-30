@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>zikirmatik</title>
+    <style>
+
+    .body {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display {
+  background-color: #009966;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  width:195px;
+  height: 295px;
+}
+
+.segment {
+  height: 125px;
+  width: 15px;
+  background-color: #CCFFCC;
+  border-radius: 9999px;
+  box-shadow: 0px 0px 25px #CCFFCC;
+}
+
+.A {
+  position: absolute;
+  top: -45px;
+  left: 90px;
+  transform: rotate(90deg);
+}
+
+.B {
+  position: absolute;
+  top: 20px;
+  left: 160px;
+}
+.C {
+  position: absolute;
+  top: 150px;
+  left: 160px;
+}
+.D {
+  position: absolute;
+  top: 215px;
+  left: 90px;
+  transform: rotate(90deg);
+}
+.E {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+}
+.F {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.G {
+  position: absolute;
+  top: 85px;
+  left: 90px;
+  transform: rotate(90deg);
+}
+
+#reset-button {
+  float: left;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #32aa03;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#reset-button:hover {background-color: #3e8e41}
+
+#reset-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#inc-button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #32aa03;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left: 30px;
+}
+
+#inc-button:hover {background-color: #3e8e41}
+
+#inc-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+    </style>
+  </head>
+  <body>
+
+    <h3>Current:
+      <span id="screen">0</span>
+    </h3>
+
+    <!-- <div id="kutu">
+      selma
+    </div> -->
+
+    <div class="display">
+    <div class="segment A"></div>
+    <div class="segment B"></div>
+    <div class="segment C"></div>
+    <div class="segment D"></div>
+      <div class="segment E"></div>
+      <div class="segment F"></div>
+      <div class="segment G"></div>
+  </div>
+
+  <div id="sifir">
+  <div class="segment A"></div>
+  <div class="segment B"></div>
+  <div class="segment C"></div>
+  <div class="segment D"></div>
+    <div class="segment E"></div>
+    <div class="segment F"></div>
+    <div class="segment G"></div>
+</div>
+
+  <div id="bir">
+  <div class="segment A"></div>
+  <div class="segment B"></div>
+  <div class="segment C"></div>
+  <div class="segment D"></div>
+    <div class="segment E"></div>
+    <div class="segment F"></div>
+    <div class="segment G"></div>
+</div>
+
+<div id="iki">
+<div class="segment A"></div>
+<div class="segment B"></div>
+<div class="segment C"></div>
+<div class="segment D"></div>
+  <div class="segment E"></div>
+  <div class="segment F"></div>
+  <div class="segment G"></div>
+</div>
+
+<div id="uc">
+<div class="segment A"></div>
+<div class="segment B"></div>
+<div class="segment C"></div>
+<div class="segment D"></div>
+  <div class="segment E"></div>
+  <div class="segment F"></div>
+  <div class="segment G"></div>
+</div>
+
+<div id="dort">
+<div class="segment A"></div>
+<div class="segment B"></div>
+<div class="segment C"></div>
+<div class="segment D"></div>
+  <div class="segment E"></div>
+  <div class="segment F"></div>
+  <div class="segment G"></div>
+</div>
+
+<div id="bes">
+<div class="segment A"></div>
+<div class="segment B"></div>
+<div class="segment C"></div>
+<div class="segment D"></div>
+  <div class="segment E"></div>
+  <div class="segment F"></div>
+  <div class="segment G"></div>
+</div>
+
+<div id="alti">
+<div class="segment A"></div>
+<div class="segment B"></div>
+<div class="segment C"></div>
+<div class="segment D"></div>
+  <div class="segment E"></div>
+  <div class="segment F"></div>
+  <div class="segment G"></div>
+</div>
+
+<div id="yedi">
+<div class="segment A"></div>
+<div class="segment B"></div>
+<div class="segment C"></div>
+<div class="segment D"></div>
+  <div class="segment E"></div>
+  <div class="segment F"></div>
+  <div class="segment G"></div>
+</div>
+
+<div id="sekiz">
+<div class="segment A"></div>
+<div class="segment B"></div>
+<div class="segment C"></div>
+<div class="segment D"></div>
+  <div class="segment E"></div>
+  <div class="segment F"></div>
+  <div class="segment G"></div>
+</div>
+
+<div id="dokuz">
+<div class="segment A"></div>
+<div class="segment B"></div>
+<div class="segment C"></div>
+<div class="segment D"></div>
+  <div class="segment E"></div>
+  <div class="segment F"></div>
+  <div class="segment G"></div>
+</div>
+
+    <button id="reset-button">Reset</button>
+    <button id="inc-button">Increment</button>
+
+  </body>
+<script src="main.js"></script>
+
+</html>
